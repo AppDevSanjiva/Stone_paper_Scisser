@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/stone"
+            android:layout_width="98dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.744"
+            app:srcCompat="@drawable/stones" />
+
+        <ImageView
+            android:id="@+id/paper"
+            android:layout_width="103dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/stone"
+            app:layout_constraintStart_toEndOf="@+id/stone"
+            app:layout_constraintTop_toTopOf="@+id/stone"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/paper" />
+
+        <ImageView
+            android:id="@+id/scissor"
+            android:layout_width="89dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="28dp"
+            app:layout_constraintBottom_toBottomOf="@+id/paper"
+            app:layout_constraintStart_toEndOf="@+id/paper"
+            app:layout_constraintTop_toTopOf="@+id/paper"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/scissors" />
+
+        <TextView
+            android:id="@+id/ans"
+            android:layout_width="163dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="282dp"
+            android:layout_marginBottom="68dp"
+            android:background="#96D888"
+            app:layout_constraintBottom_toTopOf="@+id/paper"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/c_score" />
+
+        <TextView
+            android:id="@+id/p_score"
+            android:layout_width="144dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/c_score"
+            android:layout_width="139dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/p_score"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/p_score"
+            app:layout_constraintTop_toBottomOf="@+id/p_score" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:text="PLAYER"
+            app:layout_constraintBottom_toBottomOf="@+id/p_score"
+            app:layout_constraintEnd_toStartOf="@+id/p_score"
+            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/p_score"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#00BCD4"
+            android:text="BOT"
+            app:layout_constraintEnd_toStartOf="@+id/c_score"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/bot_dis"
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:hint="Bot Choice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_score"
+            app:layout_constraintVertical_bias="0.316" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
